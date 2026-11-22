@@ -28,7 +28,6 @@ func main() {
 	maxSeq := int64(-1)
 
 	for {
-		// Sem pacotes ainda: espera para sempre. Com pacotes: 2 s de silêncio encerra a rodada.
 		if received > 0 {
 			pc.SetReadDeadline(time.Now().Add(2 * time.Second))
 		} else {
