@@ -1,0 +1,15 @@
+# binários gerados por "go build -o bin/ ./cmd/..."
+bin/
+
+# arquivos de teste e downloads parciais
+/*.bin
+*.part
+
+# benchmark: arquivo aleatório de 80 MB e pasta do servidor
+# (o resultados.csv e os gráficos ficam no git, para o relatório)
+resultados/teste-*.bin
+resultados/servidor/
+resultados/servidor-*.log
+
+# pasta padrão do servidor
+arquivos/

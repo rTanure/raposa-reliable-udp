@@ -12,11 +12,6 @@ import (
 
 const maxRetries = 20
 
-type Stats struct {
-	Packets int
-	Retrans int
-}
-
 func readPacket(pc net.PacketConn, peer net.Addr, buf []byte, deadline time.Time) (*proto.Packet, net.Addr, error) {
 	for {
 		pc.SetReadDeadline(deadline)
